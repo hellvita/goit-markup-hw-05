@@ -155,10 +155,6 @@ main {
   flex-grow: 1;
 }
 
-.section.hero {
-  margin: 0 auto;
-}
-
 .hero {
   max-width: 1440px;
   padding: 188px 0;
@@ -171,6 +167,7 @@ main {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  margin: 0 auto;
 }
 
 .hero .container {
