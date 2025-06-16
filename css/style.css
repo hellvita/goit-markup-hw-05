@@ -188,26 +188,27 @@ main {
 
 button {
   cursor: pointer;
-}
-
-.hero__button {
+  font-weight: 500;
+  line-height: inherit;
+  font-family: inherit;
   background-color: var(--color-iris);
   color: var(--color-white);
   font-size: 16px;
   letter-spacing: 0.04em;
-  font-weight: 500;
-  line-height: inherit;
-  padding: 16px 32px;
-  display: block;
-  min-width: 169px;
   border: none;
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__button:hover,
-.hero__button:focus {
+button:hover,
+button:focus {
   background-color: var(--color-ocean);
+}
+
+.hero__button {
+  display: block;
+  min-width: 169px;
+  padding: 16px 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero,
@@ -261,7 +262,7 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials__link .icon {
+.icon {
   fill: var(--color-cloud);
 }
 
@@ -430,6 +431,10 @@ button {
   max-width: 264px;
 }
 
+.footer__social-media {
+  margin-right: 80px;
+}
+
 .footer__socials-list {
   display: flex;
   gap: 16px;
@@ -438,4 +443,34 @@ button {
 .footer__socials-list .socials__link:hover,
 .footer__socials-list .socials__link:focus {
   background-color: var(--color-green);
+}
+
+.footer__form {
+  display: flex;
+  gap: 24px;
+  max-width: 453px;
+}
+
+.form__input {
+  width: 264px;
+  padding: 8px 16px;
+  background-color: inherit;
+  color: var(--color-white);
+  line-height: 2;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--color-white);
+  border-radius: 4px;
+}
+
+.form__input::placeholder {
+  color: currentColor;
+}
+
+.form__button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
