@@ -462,7 +462,8 @@ button:focus {
   background-color: var(--color-green);
 }
 
-.form__input {
+.form__input,
+.form__textarea {
   font-size: 12px;
   letter-spacing: 0.04em;
   background-color: inherit;
