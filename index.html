@@ -521,69 +521,68 @@
       <div class="modal-overlay is-open">
         <div class="modal">
           <form class="modal-form form" name="user-contacts-form">
-            <div class="close-btn">
-              <svg class="icon" width="8" height="8">
-                <use href="./images/icons.svg#close"></use>
-              </svg>
+            <div class="container-modal-form">
+              <div class="close-btn">
+                <svg class="icon" width="8" height="8">
+                  <use href="./images/icons.svg#close"></use>
+                </svg>
+              </div>
+              <p class="modal-form__title">
+                Leave your contacts and we will call you back
+              </p>
+              <fieldset
+                class="modal-form__fieldset modal-form__fieldset--inputs"
+              >
+                <label class="modal-form__input-label input-label">
+                  Name
+                  <input
+                    class="modal-form__input form__input"
+                    type="text"
+                    name="username"
+                    required
+                    autofocus
+                  />
+                  <svg class="icon" width="12" height="12">
+                    <use href="./images/icons.svg#person"></use>
+                  </svg>
+                </label>
+                <label class="modal-form__input-label input-label">
+                  Phone
+                  <input
+                    class="modal-form__input form__input"
+                    type="tel"
+                    name="phone"
+                    required
+                  />
+                  <svg class="icon" width="12" height="12">
+                    <use href="./images/icons.svg#phone"></use>
+                  </svg>
+                </label>
+                <label class="modal-form__input-label input-label">
+                  Email
+                  <input
+                    class="modal-form__input form__input"
+                    type="email"
+                    name="email"
+                    required
+                  />
+                  <svg class="icon" width="12" height="12">
+                    <use href="./images/icons.svg#mail"></use>
+                  </svg>
+                </label>
+                <label class="modal-form__input-label input-label">
+                  Comment
+                  <textarea
+                    class="modal-form__textarea form__textarea"
+                    type="textarea"
+                    rows="8"
+                    name="comment"
+                    placeholder="Text input"
+                  ></textarea>
+                </label>
+              </fieldset>
+              <button class="modal-form__button" type="submit">Send</button>
             </div>
-            <p class="modal-form__title">
-              Leave your contacts and we will call you back
-            </p>
-
-            <fieldset class="modal-form__fieldset modal-form__fieldset--inputs">
-              <label class="modal-form__input-label input-label">
-                Name
-                <input
-                  class="modal-form__input form__input"
-                  type="text"
-                  name="username"
-                  required
-                  autofocus
-                />
-                <svg class="icon" width="12" height="12">
-                  <use href="./images/icons.svg#person"></use>
-                </svg>
-              </label>
-
-              <label class="modal-form__input-label input-label">
-                Phone
-                <input
-                  class="modal-form__input form__input"
-                  type="tel"
-                  name="phone"
-                  required
-                />
-                <svg class="icon" width="12" height="12">
-                  <use href="./images/icons.svg#phone"></use>
-                </svg>
-              </label>
-
-              <label class="modal-form__input-label input-label">
-                Email
-                <input
-                  class="modal-form__input form__input"
-                  type="email"
-                  name="email"
-                  required
-                />
-                <svg class="icon" width="12" height="12">
-                  <use href="./images/icons.svg#mail"></use>
-                </svg>
-              </label>
-
-              <label class="modal-form__input-label input-label">
-                Comment
-                <textarea
-                  class="modal-form__textarea form__textarea"
-                  type="textarea"
-                  rows="8"
-                  name="comment"
-                  placeholder="Text input"
-                ></textarea>
-              </label>
-            </fieldset>
-
-            <button class="modal-form__button" type="submit">Send</button>
           </form>
         </div>
       </div>

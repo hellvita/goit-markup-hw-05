@@ -516,22 +516,27 @@ button:focus {
 }
 
 .modal {
-  max-width: 408px;
+  width: 408px; /*408*/
   max-height: 584px;
   overflow-y: auto;
 }
 
 .modal-form {
+  background-color: var(--color-diary);
+  color: var(--color-navy-blue);
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 var(--color-black-14),
+    0 1px 3px 0 var(--color-black-12), 0 2px 1px 0 var(--color-black-20);
+}
+
+.container-modal-form {
+  width: 100%;
+  padding: 72px 24px 24px;
+  margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--color-diary);
-  color: var(--color-navy-blue);
-  padding: 72px 24px 24px;
-  border-radius: 4px;
-  box-shadow: 0 1px 1px 0 var(--color-black-14),
-    0 1px 3px 0 var(--color-black-12), 0 2px 1px 0 var(--color-black-20);
 }
 
 .modal .icon {
@@ -559,12 +564,11 @@ button:focus {
 }
 
 .modal-form__fieldset {
-  font-size: 12px;
-  letter-spacing: 0.04em;
   line-height: 1.17;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: 100%;
 }
 
 .modal-form__input-label {
@@ -579,7 +583,7 @@ button:focus {
 .modal-form__textarea {
   color: var(--color-navy-blue);
   border: 1px solid var(--color-navy-blue-modal);
-  width: 360px;
+  width: 100%;
 }
 
 .modal-form__input {
