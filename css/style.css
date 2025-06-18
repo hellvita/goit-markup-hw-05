@@ -495,10 +495,16 @@ button:focus {
 }
 
 .footer-form__button {
+  min-width: 165px;
+  height: 40px;
   display: flex;
   align-items: center;
-  gap: 16px;
+  justify-content: center;
   padding: 8px 24px;
+}
+
+.footer-form__button .icon {
+  margin-left: 16px;
 }
 
 .modal-overlay {
