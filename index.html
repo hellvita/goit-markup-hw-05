@@ -522,7 +522,7 @@
         </div>
       </footer>
 
-      <div class="modal-overlay">
+      <div class="modal-overlay is-open">
         <div class="modal">
           <button type="button" class="modal__close-btn">
             <svg class="icon" width="8" height="8">
@@ -600,35 +600,38 @@
               >
                 Comment</label
               >
-              <textarea
-                class="modal-form__textarea form__textarea"
-                name="user-comment"
-                id="user-comment"
-                rows="8"
-                placeholder="Text input"
-              ></textarea>
+              <div class="modal-form__container-input">
+                <textarea
+                  class="modal-form__textarea form__textarea"
+                  name="user-comment"
+                  id="user-comment"
+                  rows="8"
+                  placeholder="Text input"
+                ></textarea>
+              </div>
 
-              <fieldset
-                class="modal-form__fieldset modal-form__fieldset--policy"
-              >
-                <div class="form__checkbox-container">
-                  <input
-                    class="modal-form__checkbox form__checkbox"
-                    type="checkbox"
-                    name="policy"
-                    value="accept"
-                    required
-                  />
-                  <svg class="icon" width="10" height="8">
-                    <use href="./images/icons.svg#check"></use>
-                  </svg>
-                </div>
+              <div class="modal-form__container-policy">
+                <input
+                  class="modal-form__checkbox form__checkbox visually-hidden"
+                  type="checkbox"
+                  name="user-privacy"
+                  id="user-privacy"
+                  value="true"
+                />
 
-                <div class="form__checkbox-content">
-                  I accept the terms and conditions of the
-                  <a href="">Privacy Policy</a>
-                </div>
-              </fieldset>
+                <label
+                  class="modal-form__checkbox-label checkbox-label"
+                  for="user-privacy"
+                >
+                  <span class="modal-form__checkbox--frame">
+                    <svg class="icon" width="10" height="8">
+                      <use href="./images/icons.svg#check"></use>
+                    </svg>
+                  </span>
+                  I accept the terms and conditions of the 
+                  <a href="" class="modal-form__privacy-link">Privacy Policy</a>
+                </label>
+              </div>
 
               <button class="modal-form__button" type="submit">Send</button>
             </div>
