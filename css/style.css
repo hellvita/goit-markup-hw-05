@@ -462,6 +462,10 @@ button:focus {
   background-color: var(--color-green);
 }
 
+.form__input {
+  height: 40px;
+}
+
 .form__input,
 .form__textarea {
   font-size: 12px;
