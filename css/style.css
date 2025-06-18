@@ -1,6 +1,6 @@
 :root {
   --color-iris: #4d5ae5;
-  --color-ocean: #404bbf;
+  --color-ocean: var(--color-ocean);
   --color-navy-blue: #2e2f42;
   --color-navy-blue-8: rgba(46, 47, 66, 0.08);
   --color-navy-blue-16: rgba(46, 47, 66, 0.16);
@@ -515,11 +515,10 @@ button:focus {
   height: 100%;
   background-color: var(--color-navy-blue-modal);
   z-index: 999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open {
@@ -528,17 +527,21 @@ button:focus {
 }
 
 .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 408px;
-  max-height: 79%;
-  overflow-y: auto;
-}
-
-.modal-form {
+  min-height: 584px;
   background-color: var(--color-diary);
-  color: var(--color-navy-blue);
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 var(--color-black-14),
     0 1px 3px 0 var(--color-black-12), 0 2px 1px 0 var(--color-black-20);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form {
+  color: var(--color-navy-blue);
 }
 
 .container-modal-form {
@@ -555,20 +558,36 @@ button:focus {
   fill: var(--color-navy-blue);
 }
 
-.close-btn {
+.modal__close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
-  padding: 8px;
-  border: 1px solid var(--color-black-10);
-  border-radius: 50%;
-  background-color: var(--color-cornflower);
   width: 24px;
   height: 24px;
+  border-radius: 50%;
+  padding: 0;
+  border: 1px solid var(--color-black-10);
+  background-color: var(--color-cornflower);
   display: flex;
-  justify-content: center;
   align-items: center;
-  cursor: pointer;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__close-btn:hover,
+.modal__close-btn:focus {
+  background-color: var(--color-ocean);
+  border: none;
+}
+
+.modal__close-btn .icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__close-btn:hover .icon,
+.modal__close-btn:focus .icon {
+  fill: var(--color-white);
 }
 
 .modal-form__title {
