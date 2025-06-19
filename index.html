@@ -522,7 +522,7 @@
         </div>
       </footer>
 
-      <div class="modal-overlay is-open">
+      <div class="modal-overlay">
         <div class="modal">
           <button type="button" class="modal__close-btn">
             <svg class="icon" width="8" height="8">
@@ -535,7 +535,7 @@
           </p>
 
           <form class="modal-form form" name="user-contacts-form">
-            <div class="container-modal-form">
+            <div class="modal-form__item-input">
               <label
                 class="modal-form__input-label input-label"
                 for="user-name"
@@ -555,7 +555,9 @@
                   <use href="./images/icons.svg#person"></use>
                 </svg>
               </div>
+            </div>
 
+            <div class="modal-form__item-input">
               <label
                 class="modal-form__input-label input-label"
                 for="user-phone"
@@ -574,7 +576,9 @@
                   <use href="./images/icons.svg#phone"></use>
                 </svg>
               </div>
+            </div>
 
+            <div class="modal-form__item-input">
               <label
                 class="modal-form__input-label input-label"
                 for="user-email"
@@ -593,7 +597,9 @@
                   <use href="./images/icons.svg#mail"></use>
                 </svg>
               </div>
+            </div>
 
+            <div class="modal-form__item-textarea">
               <label
                 class="modal-form__input-label input-label"
                 for="user-comment"
@@ -609,32 +615,32 @@
                   placeholder="Text input"
                 ></textarea>
               </div>
-
-              <div class="modal-form__container-policy">
-                <input
-                  class="modal-form__checkbox form__checkbox visually-hidden"
-                  type="checkbox"
-                  name="user-privacy"
-                  id="user-privacy"
-                  value="true"
-                />
-
-                <label
-                  class="modal-form__checkbox-label checkbox-label"
-                  for="user-privacy"
-                >
-                  <span class="modal-form__checkbox--frame">
-                    <svg class="icon" width="10" height="8">
-                      <use href="./images/icons.svg#check"></use>
-                    </svg>
-                  </span>
-                  I accept the terms and conditions of the 
-                  <a href="" class="modal-form__privacy-link">Privacy Policy</a>
-                </label>
-              </div>
-
-              <button class="modal-form__button" type="submit">Send</button>
             </div>
+
+            <div class="modal-form__container-policy">
+              <input
+                class="modal-form__checkbox form__checkbox visually-hidden"
+                type="checkbox"
+                name="user-privacy"
+                id="user-privacy"
+                value="true"
+              />
+
+              <label
+                class="modal-form__checkbox-label checkbox-label"
+                for="user-privacy"
+              >
+                <span class="modal-form__checkbox--frame">
+                  <svg class="icon" width="10" height="8">
+                    <use href="./images/icons.svg#check"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the 
+                <a href="" class="modal-form__privacy-link">Privacy Policy</a>
+              </label>
+            </div>
+
+            <button class="modal-form__button" type="submit">Send</button>
           </form>
         </div>
       </div>

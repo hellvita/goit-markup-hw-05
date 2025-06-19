@@ -544,12 +544,6 @@ button:focus {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container-modal-form {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 8px;
-}
-
 .modal .icon {
   fill: var(--color-navy-blue);
 }
@@ -592,6 +586,10 @@ button:focus {
   margin-bottom: 16px;
 }
 
+.modal-form__item-input {
+  margin-bottom: 8px;
+}
+
 .modal-form__input-label {
   display: block;
   color: var(--color-light-slate);
@@ -600,7 +598,6 @@ button:focus {
 
 .modal-form__container-input {
   position: relative;
-  margin-bottom: 16px;
 }
 
 .modal-form__input,
@@ -636,6 +633,10 @@ button:focus {
   fill: var(--color-iris);
 }
 
+.modal-form__item-textarea {
+  margin-bottom: 16px;
+}
+
 .modal-form__textarea {
   height: 120px;
   padding: 8px 16px;
@@ -667,6 +668,7 @@ button:focus {
 }
 
 .modal-form__checkbox--frame {
+  cursor: pointer;
   display: flex;
   width: 16px;
   height: 16px;
