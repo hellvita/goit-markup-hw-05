@@ -661,7 +661,6 @@ button:focus {
 }
 
 .modal-form__checkbox--frame {
-  position: relative;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
