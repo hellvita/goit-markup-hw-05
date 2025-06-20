@@ -80,12 +80,6 @@ input {
   overflow: hidden;
 }
 
-.container-page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 .container {
   width: 1158px;
   padding: 0 15px;
@@ -180,10 +174,6 @@ address {
 .link:hover:not(.logo),
 .link:focus:not(.logo) {
   color: var(--color-ocean);
-}
-
-main {
-  flex-grow: 1;
 }
 
 .hero {
