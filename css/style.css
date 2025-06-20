@@ -663,7 +663,9 @@ button:focus {
 .modal-form__checkbox--frame {
   position: relative;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
   margin-right: 8px;
@@ -684,10 +686,6 @@ button:focus {
 }
 
 .modal-form__checkbox-label .icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   fill: transparent;
 }
 
