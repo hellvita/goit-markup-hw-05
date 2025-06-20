@@ -582,6 +582,9 @@ button:focus {
 
 .modal-form__input-label {
   display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   color: var(--color-light-slate);
   margin-bottom: 4px;
 }
