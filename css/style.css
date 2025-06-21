@@ -631,6 +631,7 @@ button:focus {
 }
 
 .modal-form__textarea {
+  display: block;
   height: 120px;
   padding: 8px 16px;
   resize: none;
